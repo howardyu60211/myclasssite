@@ -1,4 +1,24 @@
 {% extends "base.html" %} {% load static %} {% block title %}
 <title>首頁</title>
-<link href="{% static 'css/index.css' %}" rel="stylesheet"> {% endblock %} {% block content %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet">
+<script src="{% static 'js/jquary.js' %}"></script> {% endblock %} {% block content %}
+<div>
+    <div class="for_bg" style="visibility: visible; position: relative; top: 0px; padding: 0px 0px 160px; background: url('http://3.bp.blogspot.com/-7_JczmlAE_8/VRuM1ev61gI/AAAAAAAAAbg/5IuNTc2-mAU/w1400-no/kmt_blogger_bg1.jpg')no-repeat fixed;">
+        <div>
+            <h4>公告本黨選舉結果</h4>
+            <br>
+            <p>本黨本黨</p>
+            <a></a>
+        </div>
+    </div>
+</div>
+<!--script>
+    $(window).bind("load resize scroll",function(e) {
+        var y = $(window).scrollTop();
+
+        $(".for_bg").filter(function() {
+            return $(this).offset().top < (y + $(window).height()) && $(this).offset().top + $(this).height() > y;
+        }).css('background-position', '0px ' + parseInt(-y / 6) + 'px');
+    });
+</script-->
 {% endblock %}
