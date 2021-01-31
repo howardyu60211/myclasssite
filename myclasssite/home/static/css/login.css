@@ -1,0 +1,19 @@
+.bd_example {
+    padding: 1.5rem;
+    position: relative;
+    margin: 1rem -15px 0;
+    border: solid #f7f7f9;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+    box-sizing: border-box;
+    display: block;
+}
+
+.text-white {
+    color: #fff!important;
+}
+
+.contander {
+    border-top: 1.5rem;
+}

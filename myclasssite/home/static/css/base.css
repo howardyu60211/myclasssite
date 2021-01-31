@@ -1,0 +1,25 @@
+.bg-dark {
+    background-color: #343a40!important;
+}
+
+.bd-example {
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+}
+
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
