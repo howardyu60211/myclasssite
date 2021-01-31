@@ -23,13 +23,11 @@
                         {% if request.session.is_login %}
                         <h4 class="text-white">{{ request.session.user_name }}，歡迎您登入!</h4>
                         {% endif %}
-                        <li class="active"><a href="/index/" class="text-white">主頁</a></li>
-                        <li class="active"><a href="/crawler/" class="text-white">獲取最新資料</a></li>
-                        {% if request.session.is_login %}
-                        <li class="active"><a href="/logout/" class="text-white">登出</a></li>
-                        {% else %}
-                        <li class="active"><a href="/login/" class="text-white">登入</a></li>
-                        {% endif %}
+                        <li class="active" style="display:inline;"><a href=" /index/ " class="text-white ">主頁</a></li>
+                        < {% if request.session.is_login %} <li class="active" style="display:inline;"><a href="/logout/ " class="text-white ">登出</a></li>
+                            {% else %}
+                            <li class="active" style="display:inline;"><a href="/login/ " class="text-white ">登入</a></li>
+                            {% endif %}
                     </div>
                 </div>
             </nav>
@@ -37,12 +35,12 @@
     </div>
     {% block content %}{% endblock %}
     <div>
-        <div clas="col-2"></div>
-        <div clas="col-2"></div>
-        <div clas="col-2"></div>
+        <div clas="col-2 "></div>
+        <div clas="col-2 "></div>
+        <div clas="col-2 "></div>
     </div>
-    <script src="{% static 'js/jquary.js' %}"></script>
-    <script src="{% static 'css/bootstrap-4.0.0/dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquary.js' %} "></script>
+    <script src="{% static 'css/bootstrap-4.0.0/dist/js/bootstrap.min.js' %} "></script>
 </body>
 
 </html>
